@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestoría Administrativa Julieta Gómez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #003366;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5em 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        .hero {
+            background-color: #003366;
+            color: #fff;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        section {
+            margin: 2em 0;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+        }
+        .cookie-banner, .data-protection {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+        .cookie-banner button, .data-protection button {
+            background-color: #ffd700;
+            border: none;
+            color: #003366;
+            padding: 0.5em 1em;
+            margin-left: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gestoría Administrativa Julieta Gómez</h1>
+        <p>Zaragoza, España</p>
+    </header>
+    <nav>
+        <a href="#about">Acerca de Nosotros</a>
+        <a href="#services">Servicios Prestados</a>
+        <a href="#contact">Contáctenos</a>
+    </nav>
+    <div class="hero">
+        <h2>Bienvenidos a Gestoría Administrativa Julieta Gómez</h2>
+        <p>Nos encargamos de tus trámites para que tú no tengas que preocuparte.</p>
+    </div>
+    <div class="container">
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>En la Gestoría Administrativa Julieta Gómez, ofrecemos servicios personalizados y de alta calidad para ayudar a nuestros clientes con una amplia variedad de trámites administrativos en España. Nuestra oficina en Zaragoza se dedica a proporcionar soluciones eficientes y efectivas, asegurando que cada cliente reciba la atención y el apoyo que necesita.</p>
+        </section>
+        <section id="services">
+            <h2>Servicios Prestados</h2>
+            <ul>
+                <li>Trámites ante las Oficinas de Extranjería en España</li>
+                <li>Trámites ante la DGT</li>
+                <li>Tramitación de Herencias</li>
+                <li>Creación de Sociedades en España</li>
+                <li>Trámites ante la Seguridad Social</li>
+                <li>Gestión de Alta y Baja de Autónomos</li>
+                <li>Gestión Laboral de Empleados Domésticos</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contáctenos</h2>
+            <p>Para más información o para solicitar cualquiera de nuestros servicios, no dudes en ponerte en contacto con nosotros. Puedes visitarnos en nuestra oficina en Zaragoza, llamarnos por teléfono o enviarnos un correo electrónico.</p>
+            <p><strong>Dirección:</strong> Calle Ejemplo, 123, Zaragoza, España</p>
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+            <p><strong>Email:</strong> info@gestoriajulietagomez.com</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gestoría Administrativa Julieta Gómez. Todos los derechos reservados.</p>
+    </footer>
+    <div class="cookie-banner" id="cookie-banner">
+        <p>Este sitio utiliza cookies para mejorar su experiencia. ¿Acepta el uso de cookies?</p>
+        <button onclick="acceptCookies()">Aceptar</button>
+        <button onclick="declineCookies()">Rechazar</button>
+    </div>
+    <div class="data-protection" id="data-protection">
+        <p>En cumplimiento con la Ley de Protección de Datos Española, por favor autorice el uso de sus datos personales.</p>
+        <button onclick="acceptDataProtection()">Aceptar</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("cookie-banner").style.display = "block";
+            document.getElementById("data-protection").style.display = "block";
+        });
+
+        function acceptCookies() {
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+
+        function declineCookies() {
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+
+        function acceptDataProtection() {
+            document.getElementById("data-protection").style.display = "none";
+        }
+    </script>
+</body>
+</html>
